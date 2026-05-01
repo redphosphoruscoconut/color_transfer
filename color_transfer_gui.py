@@ -1,5 +1,6 @@
 import sys
 import os
+import multiprocessing
 import cv2
 import numpy as np
 from pathlib import Path
@@ -582,4 +583,5 @@ def main():
 
 
 if __name__ == "__main__":
+    multiprocessing.freeze_support()
     main()
